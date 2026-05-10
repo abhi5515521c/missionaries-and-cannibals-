@@ -2,8 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 // Material Symbols are loaded via index.html and used as spans with class "material-symbols-outlined"
 
-const MISSIONARY_IMG = "https://lh3.googleusercontent.com/aida-public/AB6AXuBXp6lGtqrJBzj_f7xJIkux4uRPysCwYRzomRwDrjd_6QtuskZIopoIrZw7IsZkKNS_v1gA9YXhriXXS64pXbnNW6KChEymiKtveOvp7jfDParGG14F8SNbpYKhhtSliklt6g_Dy8X3Uxr3HOjkxRO1mODxDL0zT9_q0ony3jsMbUMnoj6iau0iQ2T1OK8HqbOXUyUaosW8Z1FkN_rGbRTa-B0kyBavM1MbMPUb9tZFpcChQI3w8bhJ97QUxdjQDa2rE6IHK-oxEgRu";
-const CANNIBAL_IMG = "https://lh3.googleusercontent.com/aida-public/AB6AXuAUFuaZo94FTFTlnaTNvzK7G0swHu7oodSpZlYolTT2y--n6nJroOJGhecto2IH2XoG7ICOapag464aw2jXctfY48bkTOngRoqCM8d0_ISXuttEGyliOwgKGqeIOwvZKEyHj1rkDoLN-_eUBNKAgBGyHlTQ6HofDvmF3zT5UbdvZUMk5zM_Bgs-uBuKahJmodaG-Dfd1HMJGyJThV-c-Kl2upH9-lNKegD0_ep6ookC8ieHgNSGlg-sNqKmjFYmwz8J0QzTJTSlhGBj";
+import missionaryImg from './assets/missionary.jpeg';
+import cannibalImg from './assets/cannibal.jpeg';
+
+const MISSIONARY_IMG = missionaryImg;
+const CANNIBAL_IMG = cannibalImg;
 const RIVER_BG = "https://lh3.googleusercontent.com/aida-public/AB6AXuD3Vh84mP8YT6sutp7Zr2MJx24Bhsxm2maLUCGlGbBeO5GrrMpTj9K67av0po6faq4NzaYxZ6QnT35Ut_IoiYvcrJhWPQlQ3NAdR3p6ZM2Oa0Ds7XyW_5Uj0PiP9qxQhVWShYhNmCEk1Vv2lHMimx3n3dbZ6pFwdorxxUid8WVBpu2RIzCnTmNYDCnMsDu2HXwDsfJTmZFsiMTby1mdBGx61O30n6cmsmb4s2qxqcxpjvxFC7dwXt0MeUwc4TK2EylslAFvTpk_LWq2";
 
 const OPTIMAL_SOLUTION = [
