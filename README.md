@@ -1,16 +1,36 @@
-# React + Vite
+# Missionaries & Cannibals Adventure | Pro Max
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-fidelity, production-grade interactive simulation of the classic Missionaries and Cannibals problem. Built with React, Vite, Tailwind CSS v4, and Framer Motion.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
+- **Dual Game Modes**:
+  - **Study Mode**: A guided 11-step walkthrough with detailed narrative explanations of the optimal solution.
+  - **Practice Mode**: Free-play mode to test your own river-crossing logic.
+- **Pro Max UI/UX**:
+  - Immersive dark-fantasy adventure theme with neon highlights.
+  - Glassmorphism design system for a premium, modern feel.
+  - Dynamic river backgrounds and subtle micro-animations.
+- **Smart Game Engine**:
+  - Real-time safety monitoring (Cannibals must not outnumber Missionaries).
+  - Smooth character transitions and boat movement using Framer Motion.
+  - Victory and Game Over states with performance tracking (Time & Moves).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technology Stack
+- **Frontend**: React 19, Vite
+- **Styling**: Tailwind CSS v4 (Glassmorphism & Neon Glows)
+- **Animations**: Framer Motion
+- **Icons**: Google Material Symbols
 
-## React Compiler
+## 🎮 How to Play
+1. **Load the Boat**: Click on Missionaries or Cannibals on either bank to load them into the boat (Max 2 people).
+2. **Cross the River**: Click the boat or the "Move Boat" button to row to the other side.
+3. **Unload**: Click the characters in the boat to unload them onto the bank.
+4. **Win**: Successfully transport all 3 Missionaries and 3 Cannibals to the right bank without anyone being eaten!
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Getting Started
+1. Install dependencies: `npm install`
+2. Run development server: `npm run dev`
+3. Build for production: `npm run build`
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Built with ❤️ for a premium educational experience.*
