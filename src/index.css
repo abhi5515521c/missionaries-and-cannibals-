@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body-md overflow-hidden;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: rgba(31, 32, 31, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(178, 204, 199, 0.1);
+  }
+  
+  .neon-glow-cyan {
+    box-shadow: 0 0 15px rgba(171, 203, 223, 0.3);
+  }
+  
+  .river-gradient {
+    background: linear-gradient(180deg, #08201d 0%, #133444 50%, #08201d 100%);
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+}
+
+/* Custom scrollbar for move history */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(178, 204, 199, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(178, 204, 199, 0.4);
+}
